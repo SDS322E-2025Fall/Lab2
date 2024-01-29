@@ -1,0 +1,151 @@
+---
+title: "Lab 2"
+---
+
+```{r,include = FALSE}
+## DO NOT DELETE THIS CHUNK
+knitr::opts_chunk$set(error = TRUE)
+```
+
+### Enter the names of the group members here: 
+
+**This assignment is due by the end of the lab. Only one student in the group submits a pdf file on Gradescope.**
+
+*For all questions, include the R commands/functions that you used to find your answer (show R chunk). Answers without supporting code will not receive credit. Write full sentences to describe your findings.*
+
+In this lab, you will explore the dataset `diamonds` contained in the package `ggplot2`. The `ggplot2` package is loaded when you load the `tidyverse` package so we can just load a single package.
+
+```{r, warning=FALSE, message=FALSE}
+## Load the tidyverse and ggplot2 packages together
+library(tidyverse)
+```
+
+The `diamonds` dataset consists of prices and quality information from about 54,000 diamonds. The first few observations are listed below.
+
+```{r}
+## Print the first few rows of the 'diamonds' dataset
+diamonds
+```
+
+This dataset is fairly large so it's not possible to examine every observation. But you can take a random sample of 10 rows using the `sample_n()` function.
+
+```{r}
+diamonds |> 
+        sample_n(10)
+```
+Try taking a random sample of 15 rows from the dataset and check if anything seems out of the ordinary in those observations.
+
+```{r}
+# your code goes below (make sure to edit comment)
+```
+
+
+### Question 1: (1 pt)
+
+Save the dataset `diamonds` in the environment and name it using the initials of all team members in alphabetical order. *Remember that you can get more details about the dataset by running `?diamonds` in the console.*
+
+*Note: DO NOT use `?` in this document as that will prevent you from rendering it or will open the documentation in a new tab.*
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+------------------------------------------------------------------------
+
+### Question 2: (4 pts)
+
+Use this template of a `ggplot` command to create a histogram of `price`:
+
+```{r}
+# EDIT: Histogram using ggplot
+dataset |> 
+        ggplot(aes(x = variable)) + 
+        geom_histogram() 
+```
+
+Use this template of a `ggplot` command to create a boxplot of `price`:
+
+```{r}
+# EDIT: boxplot using ggplot
+dataset |> 
+        ggplot(aes(x = variable)) + 
+        geom_boxplot() 
+```
+
+Comparing the boxplot to the histogram, in your view, which visualization is more informative for understanding the distribution of the `price` data?
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 3: (3 pts)
+
+Use this template of a `ggplot` command to create a bar graph of `clarity`:
+
+```{r}
+# EDIT: Bar graph using ggplot
+dataset |> 
+        ggplot(aes(x = variable)) + 
+        geom_bar() 
+```
+
+
+Using these plots, what is the most common category of `clarity`?
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 4: (4 pts)
+
+An important parameter for histograms is the number of bars that you use in the plot. This is set using the `bins` argument to `geom_histogram()`. The default is `bins = 30`. What happens if you use just 5 bins for the histogram of `price`? Or what about using 45? How do the histogram look different from each other?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 5: (3 pts)
+
+We actually discussed a function in lecture that can create a graph for each category of a variable using `ggplot`. Using `ggplot` with that function, create a histogram of price for each category of clarity.
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+
+------------------------------------------------------------------------
+
+### Question 6: (3 pts)
+
+Choose one question about that the data that you want to investigate (could be the one from the pre-Lab Quiz). Write two hypotheses related to this question using a numbered list below:
+
+1. 
+
+2. 
+
+Make a plot that addresses that question and is informative for the hypotheses you have chosen. How would you interpret the results of the plot? Which o the two hypotheses is more likely?
+
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+
+
+**Your answer goes here. Write sentences in bold.**
+
+
+------------------------------------------------------------------------
+
+
+### Formatting: (2 pts)
+
+Comment your code, write full sentences, and knit your file!
