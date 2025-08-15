@@ -9,7 +9,7 @@ knitr::opts_chunk$set(error = TRUE)
 
 ### Enter the names of the group members here: 
 
-**This assignment is due by the end of the lab. Only one student in the group submits a pdf file on Gradescope.**
+**This assignment is due by the end of the day (11.59pm). Only one student in the group submits a pdf file on Gradescope.**
 
 *For all questions, include the R commands/functions that you used to find your answer (show R chunk). Answers without supporting code will not receive credit. Write full sentences to describe your findings.*
 
@@ -124,7 +124,7 @@ We actually discussed a function in lecture that can create a graph for each cat
 
 ### Question 6: (3 pts)
 
-Choose one question about that the data that you want to investigate (could be the one from the pre-Lab Quiz). Write two hypotheses related to this question using a numbered list below:
+Choose one question about that the data that you want to investigate. Write two hypotheses related to this question using a numbered list below:
 
 1. 
 
