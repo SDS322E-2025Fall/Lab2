@@ -1,5 +1,6 @@
 ---
 title: "Lab 2"
+output: pdf_document
 ---
 
 ```{r,include = FALSE}
@@ -51,7 +52,6 @@ Save the dataset `diamonds` in the environment and name it using the initials of
 
 ```
 
-------------------------------------------------------------------------
 
 ### Question 2: (4 pts)
 
@@ -77,7 +77,6 @@ Comparing the boxplot to the histogram, in your view, which visualization is mor
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 3: (3 pts)
 
@@ -95,7 +94,6 @@ Using these plots, what is the most common category of `clarity`?
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 4: (4 pts)
 
@@ -108,43 +106,15 @@ An important parameter for histograms is the number of bars that you use in the 
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 5: (3 pts)
 
-We actually discussed a function in lecture that can create a graph for each category of a variable using `ggplot`. Using `ggplot` with that function, create a histogram of price for each category of clarity.
+Using `ggplot` to create a histogram of price for each category of clarity.
 
 ```{r}
 # your code goes below (make sure to edit comment)
 
 ```
-
-
-------------------------------------------------------------------------
-
-### Question 6: (3 pts)
-
-Choose one question about that the data that you want to investigate (could be the one from the pre-Lab Quiz). Write two hypotheses related to this question using a numbered list below:
-
-1. 
-
-2. 
-
-Make a plot that addresses that question and is informative for the hypotheses you have chosen. How would you interpret the results of the plot? Which o the two hypotheses is more likely?
-
-
-```{r}
-# your code goes below (make sure to edit comment)
-
-```
-
-
-
-**Your answer goes here. Write sentences in bold.**
-
-
-------------------------------------------------------------------------
-
 
 ### Formatting: (2 pts)
 
